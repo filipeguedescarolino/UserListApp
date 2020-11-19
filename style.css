@@ -1,0 +1,45 @@
+#card-container li {
+    max-width: 1024px;
+    background-color: #d6cccb;
+    border-radius: 25px;
+    margin: 22px 22px;
+    padding: 10px;
+    line-height: 16px;
+    flex: 0 45%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: right;
+    text-align: right;
+}
+
+ul li div span:first-child {
+    font-weight: 700;
+    flex-basis: 20%;
+    padding-right: 5px;
+}
+
+#app {
+    margin: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    #card-container li {
+        background-color: rgb(238, 146, 136);
+        margin: 11px 11px;
+        padding: 5px;
+        flex: 0 100%;
+    }
+}
